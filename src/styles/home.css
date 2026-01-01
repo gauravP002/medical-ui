@@ -1,0 +1,94 @@
+/* Page background */
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card */
+.home-card {
+  background: #ffffff;
+  max-width: 500px;
+  width: 100%;
+  padding: 40px 30px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Title */
+.home-card h1 {
+  margin-bottom: 15px;
+  color: #2d3748;
+}
+
+/* Description */
+.home-card p {
+  font-size: 15px;
+  color: #4a5568;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Buttons container */
+.home-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.home-btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Primary */
+.home-btn.primary {
+  background: #667eea;
+  color: #fff;
+}
+
+.home-btn.primary:hover {
+  background: #5a67d8;
+}
+
+/* Secondary */
+.home-btn.secondary {
+  border: 2px solid #667eea;
+  color: #667eea;
+  background: transparent;
+}
+
+.home-btn.secondary:hover {
+  background: #667eea;
+  color: #fff;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .home-card {
+    padding: 30px 20px;
+  }
+}
