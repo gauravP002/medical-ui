@@ -76,7 +76,7 @@ export default function Login() {
           onChange={handleChange}
         />
 
-       <button type="submit">{!isAdmin ? 'Login' : 'Admin Login'}</button>
+       <button type="submit">Login</button>
 
         {error && <div className="auth-error">{error}</div>}
 
@@ -84,8 +84,7 @@ export default function Login() {
           Don’t have an account? <Link to="/register">Register</Link>
         </div>
         <div className="auth-footer">
-           <a onClick={setIsAdminCall} >{!isAdmin ? 'Login As Admin' : 'Login As User'}</a>
-       
+         Login As Doctor <Link to="/doctor-login">Doctor Login</Link>
         </div>
       </form>
     </div>

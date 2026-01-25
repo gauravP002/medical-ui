@@ -1,0 +1,95 @@
+/* ===== Page Background ===== */
+.doctor-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ===== Card ===== */
+.doctor-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  padding: 35px 30px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.5s ease;
+}
+
+/* ===== Title ===== */
+.doctor-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2d3748;
+}
+
+/* ===== Inputs ===== */
+.doctor-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.doctor-card input:focus {
+  border-color: #38a169;
+  box-shadow: 0 0 0 2px rgba(56, 161, 105, 0.25);
+}
+
+/* ===== Button ===== */
+.doctor-card button {
+  width: 100%;
+  padding: 12px;
+  background: #38a169;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.doctor-card button:hover {
+  background: #2f855a;
+}
+
+/* ===== Info / Error ===== */
+.doctor-message {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.doctor-message.success {
+  color: #38a169;
+}
+
+.doctor-message.error {
+  color: #e53e3e;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 480px) {
+  .doctor-card {
+    padding: 30px 20px;
+  }
+}

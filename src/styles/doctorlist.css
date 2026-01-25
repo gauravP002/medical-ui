@@ -1,0 +1,162 @@
+/* Doctor page / card */
+
+
+/* Doctor list */
+.doctor-list {
+  width: 640px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(22, 27, 34, 0.04);
+  box-sizing: border-box;
+}
+
+.doctor-list h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+/* list items */
+.doctor-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.doctor-item {
+  padding: 12px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #eef2f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.doctor-item strong {
+  display: block;
+  color: #111827;
+  font-size: 15px;
+}
+
+.doctor-item .details {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.doctor-item .details div {
+  margin-top: 4px;
+}
+
+.doctor-item button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.doctor-item button:hover {
+  background: #f1f5f9;
+}
+
+/* Edit modal / card */
+.doctor-edit-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(6, 8, 12, 0.45);
+  z-index: 60;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.doctor-edit-card {
+  width: 480px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 12px 40px rgba(2,6,23,0.28);
+  box-sizing: border-box;
+}
+
+/* edit form */
+.doctor-edit-form {
+  display: grid;
+  gap: 10px;
+}
+
+.doctor-edit-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: #0f172a;
+}
+
+.doctor-edit-form input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #e6e9ef;
+  outline: none;
+  font-size: 14px;
+}
+
+.doctor-edit-form input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.06);
+}
+
+/* form actions */
+.doctor-edit-form .actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.doctor-edit-form button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.doctor-edit-form button[type="submit"] {
+  background: #10b981;
+  color: #fff;
+}
+
+.doctor-edit-form button[type="button"] {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* small screens */
+@media (max-width: 960px) {
+  .doctor-page {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .doctor-list {
+    width: 100%;
+  }
+
+  .doctor-card {
+    width: 100%;
+  }
+
+  .doctor-edit-card {
+    width: 100%;
+  }
+}
