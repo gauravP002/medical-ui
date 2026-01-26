@@ -9,7 +9,8 @@ export async function login(data, isAdmin) {
   else {
     data['role'] = 'user'
   }
-  const res = await fetch(`${BASE_URL}/login`, {
+  const DOc_url = "http://localhost:8080/api/doctor"
+  const res = await fetch(`${data === "admin" || data === "role" ? BASE_URL : DOc_url }/login`, {
     method: "POST",
     headers:header,
     body: JSON.stringify(data)
