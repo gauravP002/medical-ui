@@ -32,6 +32,16 @@ export default function UserDashBoard() {
     setDOctorList((setDOctorListview) => !setDOctorList);
   };
 
+  const addPatients = () =>{
+     navigate("/addPaitent");
+
+  }
+
+  const loadAllAppoinment = () =>{
+    navigate("/appoinments")
+
+  }
+
   const loadUser = async () => {
     try {
       const res = await getAllUsers("ADMIN");
@@ -67,6 +77,13 @@ export default function UserDashBoard() {
             <button onClick={loadDoctors}>All Doctors</button>
           </div>
         ) : null}
+
+        {
+          user.role === "USER" ? (<div>
+            <button onClick={loadAllAppoinment}>All appoinment</button>
+            <button onClick={addPatients}>Add Patients</button>
+          </div>) : null
+        }
 
         {error && <p className="error">{error}</p>}
 

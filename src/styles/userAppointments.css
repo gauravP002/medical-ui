@@ -1,0 +1,87 @@
+/* ===== Page Layout ===== */
+.user-appointments-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #edf2f7, #e6fffa);
+  padding: 30px 20px;
+}
+
+/* ===== Title ===== */
+.user-appointments-page h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2d3748;
+}
+
+/* ===== Grid ===== */
+.appointment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ===== Card ===== */
+.appointment-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.appointment-card:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== Text ===== */
+.appointment-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+/* ===== Status Badge ===== */
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Status colors */
+.status.PENDING {
+  background: #fefcbf;
+  color: #744210;
+}
+
+.status.ACCEPTED {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.status.COMPLETED {
+  background: #bee3f8;
+  color: #2a4365;
+}
+
+.status.REJECTED {
+  background: #fed7d7;
+  color: #742a2a;
+}
+
+/* ===== Empty State ===== */
+.no-appointments {
+  text-align: center;
+  color: #718096;
+  margin-top: 40px;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 480px) {
+  .appointment-card {
+    padding: 16px;
+  }
+}

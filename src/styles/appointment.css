@@ -1,0 +1,82 @@
+/* ===== Page Layout ===== */
+.appointment-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ===== Card ===== */
+.appointment-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 35px 30px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.5s ease;
+}
+
+/* ===== Title ===== */
+.appointment-card h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  color: #2d3748;
+}
+
+/* ===== Inputs ===== */
+.appointment-card input,
+.appointment-card select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.appointment-card input:focus,
+.appointment-card select:focus {
+  border-color: #5a67d8;
+  box-shadow: 0 0 0 2px rgba(90, 103, 216, 0.25);
+}
+
+/* ===== Button ===== */
+.appointment-card button {
+  width: 100%;
+  padding: 12px;
+  background: #5a67d8;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.appointment-card button:hover {
+  background: #434190;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 480px) {
+  .appointment-card {
+    padding: 30px 20px;
+  }
+}
