@@ -9,6 +9,8 @@ import CreateAppointment from "./components/CreateAppointment";
 import UserAppointments from "./pages/UserAppointments";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
+import Services from "./pages/Services";
+import About from "./pages/About";
 
 export default function App() {
   return (
@@ -28,6 +30,8 @@ export default function App() {
         <Route path="/addDoctor" element={<AddDoctor />} />
         <Route path="/addPaitent" element={<CreateAppointment />} />
         <Route path="/appoinments" element={<UserAppointments />} />
+           <Route path="/services" element={<Services />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />

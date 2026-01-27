@@ -21,8 +21,8 @@ export default function Header() {
 
           <nav className="hidden md:flex space-x-8 items-center font-medium text-slate-600">
             <Link to="/" className="hover:text-teal-600 transition-colors">Find Doctors</Link>
-            <Link to="/" className="hover:text-teal-600 transition-colors">Services</Link>
-            <Link to="/" className="hover:text-teal-600 transition-colors">About</Link>
+            <Link to="/services" className="hover:text-teal-600 transition-colors">Services</Link>
+            <Link to="about/" className="hover:text-teal-600 transition-colors">About</Link>
           </nav>
 
           <div className="flex items-center gap-3 sm:gap-4">
