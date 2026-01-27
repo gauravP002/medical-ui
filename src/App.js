@@ -40,8 +40,4 @@ export default function App() {
   );
 
 
-
-//
-
-
 }
